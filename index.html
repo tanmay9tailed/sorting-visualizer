@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div>
+                <div class="btn-conatiner">
+                    <button class="randomize">Randomize Array</button>
+                    <button class="play">Play</button>
+                    <button class="stop">Stop</button>
+                </div>
+                <div class="input-container">
+                    <div>
+                    <span>Enter number of bars</span>
+                    <input type="number" max="150" name="" id="noofbar" value="70">
+                    </div>
+                    <div>
+                    <span>Enter time in millis</span>
+                    <input type="number" max="5000" name="" id="time" value="100">
+                    </div>
+                </div>
+                <div class="options">
+                    <select name="sorting" id="sorting-options">
+                        <option value="Bubble">Bubble Sort</option>
+                        <option value="Selection">Selection Sort</option>
+                        <option value="Insertion">Insertion Sort</option>
+                        <option value="Merge">Merge Sort</option>
+                        <option value="Quick">Quick Sort</option>
+                        <option value="Heap">Heap Sort</option>
+                    </select>
+                </div>
+            </div>
+            <div class="complexity">
+            </div>
+        </div>
+        <div class="bar-container">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
